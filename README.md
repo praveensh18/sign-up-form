@@ -1,7 +1,9 @@
 # Signup Form Page using ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
-You’ll need to have below dependencies on your local machine.
+## This Application is available here - https://sign-up-form-praveensh18.vercel.app \
+
+To run the project on your local machine, you’ll need to have below dependencies
+
 - Node version >= 14
 - react-router-dom version 5
 
