@@ -1,6 +1,6 @@
 # Signup Form Page using ReactJs
 
-## This Application is available here - https://sign-up-form-praveensh18.vercel.app \
+## This Application is available here - https://sign-up-form-praveensh18.vercel.app 
 
 To run the project on your local machine, you’ll need to have below dependencies
 
