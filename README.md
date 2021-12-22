@@ -1,7 +1,7 @@
 # Signup Form Page using ReactJs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
-You’ll need to have below dependencies on your local machine-\
+You’ll need to have below dependencies on your local machine.\
 - Node version >= 14
 - react-router-dom v^5.0.0
 
