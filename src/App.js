@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import SignupForm from './components/SignupForm';
+import UsersList from './components/UsersList';
+import Navbar from './components/Navbar';
+import history from './history';
 
 function App() {
+  
+  const [userList, setUserList] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* Using router to handle navigation between signup page and user details page */}
+      <Router history={history}>
+      <Navbar></Navbar>
+      <Switch>
+        <Route path="/" exact component={() => <SignupForm setUserList={setUserList}/>}></Route>
+        <Route path="/users" component={() => <UsersList userList={userList} />}></Route>
+      </Switch>
+      </Router>
     </div>
   );
 }
