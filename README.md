@@ -7,6 +7,18 @@ To run the project on your local machine, you’ll need to have below dependenci
 - Node version >= 14
 - react-router-dom version 5
 
+## Description
+• Build a production ready sign-up form page.
+• The form should allow users to enter first name, last name, email, and password.
+• All fields are required and validated.
+• Password validation:
+• Should be a minimum of 8 characters,
+• Should contain lower and uppercase letters
+• Should not contain user’s first or last name.
+• The valid form should send two sequential requests:
+• POST form data to https://demo-api.now.sh/users
+• GET from https://demo-api.now.sh/users
+
 ## Available Scripts
 
 In the project directory, you can run:

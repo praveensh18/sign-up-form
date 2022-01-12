@@ -19,13 +19,17 @@ export default function validateInfo(values) {
     }
     
     // Password
+    // Should be a minimum of 8 characters,
+    // Should contain lower and uppercase letters
+    // Should not contain user’s first or last name.
+
     if(!values.password) {
         errors.password = 'Password is required';
     } else if(values.password.length < 8) {
         errors.password = 'Password needs to be more than 8 characters'
-    } else if(values.password === values.firstName) {
+    } else if(values.password.includes(values.firstName)) {
         errors.password = 'Password can not contain your first name'
-    } else if(values.password === values.lastName) {
+    } else if(values.password.includes(values.lastName)) {
         errors.password = 'Password can not contain your last name'
     } else if(!/(?=.*?[A-Z])(?=.*?[a-z])/.test(values.password)) {
         errors.password = 'Password should contain lower and uppercase letters'

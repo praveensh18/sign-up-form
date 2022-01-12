@@ -31,14 +31,12 @@ const useForm = (setUserList, validate) => {
         const isValid = Object.values(validate(values)).length === 0;
         if(isValid) {
             
-            await demoApi.post('/users', values);
+            demoApi.post('/users', values);
             
-            // Calling get user after 4 seconds
-            setTimeout(async () => {
-                const res = await demoApi.get('/users')
-                setUserList(res.data);
-                history.push('/users');
-            }, 4000);
+            // Calling get user after sign up
+            const res = await demoApi.get('/users')
+            setUserList(res.data);
+            history.push('/users');
         }
     };
 

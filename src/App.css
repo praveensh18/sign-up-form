@@ -69,7 +69,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   margin: auto;
-  min-width: 34%;
+  min-width: 515px;
   padding: 3%;
 }
 
@@ -210,6 +210,12 @@ button:active {
   margin-bottom: 0;
   margin-right: 10px;
   font-size: 1.4rem;
+}
+
+@media (max-width:768px) {
+  .signup-container {
+    min-width: 100%;
+  }
 }
 
  
